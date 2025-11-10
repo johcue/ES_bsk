@@ -9,4 +9,4 @@ class TestBowlingGame(unittest.TestCase):
         game = BowlingGame()
         game.add_frame(f)
         self.assertEqual(f, game.get_frame_at(0))
-        pass
+
