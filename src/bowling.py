@@ -1,5 +1,5 @@
-from bowling_error import BowlingError
-from frame import Frame
+from src.bowling_error import  BowlingError
+from src.frame import Frame
 
 
 class BowlingGame:
