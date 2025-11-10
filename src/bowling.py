@@ -37,6 +37,7 @@ class BowlingGame:
             score += frame.score()
         return score
 
+
     def set_first_bonus_throw(self, bonus_throw: int) -> None:
         pass
 
