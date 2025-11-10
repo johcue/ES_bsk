@@ -133,6 +133,7 @@ class TestBowlingGame(unittest.TestCase):
         game.add_frame(Frame(8, 1))
         f = Frame(2, 8)
         game.add_frame(f)
+        game.set_first_bonus_throw(7)
         self.assertEqual(90, game.calculate_score())
 
     def test_strike_last_frame(self):
@@ -146,9 +147,11 @@ class TestBowlingGame(unittest.TestCase):
         game.add_frame(Frame(3, 3))
         game.add_frame(Frame(4, 5))
         game.add_frame(Frame(8, 1))
-        f = Frame(10, 0)
+        f = Frame(2, 8)
         game.add_frame(f)
-        self.assertEqual(92, game.calculate_score())
+        game.set_first_bonus_throw(7)
+        game.set_second_bonus_throw(2)
+        self.assertEqual(90, game.calculate_score())
 
 
 
