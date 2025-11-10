@@ -41,7 +41,7 @@ class TestBowlingGame(unittest.TestCase):
         game.add_frame(Frame(3, 3))
         game.add_frame(Frame(4, 5))
         game.add_frame(Frame(8, 1))
-        f = Frame(22, 6)
+        f = Frame(2, 6)
         game.add_frame(f)
         self.assertEqual(81, game.calculate_score())
 
